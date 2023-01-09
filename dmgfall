@@ -1,12 +1,1 @@
-local old
-old =
-    hookmetamethod(
-    game,
-    LocalPlayer,
-    function(self, ...)
-        if getnamecallmethod() == "FireServer" and self.Name == "FallDamage" and not checkcaller() then
-            return
-        end
 
-        return old(self, ...)
-    end
